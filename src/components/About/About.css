@@ -1,0 +1,420 @@
+.photo{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 20px;
+    margin-bottom: 40px; 
+    z-index:0;
+    
+}
+
+.info{
+   height: 20vh;
+   width: 50vh; 
+   position: relative;
+   border-radius: 20px;
+   background-color: black;
+   display: block;
+}
+
+.photobox{
+   height: 10vh;
+   width: 40vh;
+   
+    float:left;
+
+    
+}
+
+.aboutcon{
+    height: 93vh;
+    width: 100%;
+    display:flex;
+    position: relative;
+    background-color: black;
+}
+
+.aboutcon2{
+    height: 93vh;
+    width: 50%;
+    display:block;
+    position: absolute;
+    float: left;
+    left:0;
+    background-color: #f79341;
+    z-index: 3;
+
+
+}
+
+.aboutcon3{
+    height: 50vh;
+    width: 50%;
+    
+    position: relative;
+    float: left;
+    left:0;
+    align-content: center;
+    
+}  
+@media screen and (max-width: 800px) {
+
+    .aboutcon2{
+
+      display:none;
+
+    }
+
+    .aboutcon3{
+        height: 50vh;
+        width: 100%;
+        
+        position: relative;
+        float: left;
+        left:0;
+        
+        
+    }  
+
+    .aboutcon4{
+        
+        padding-left: 70px;
+    } 
+
+    .aboutcon5{
+        
+        padding-left: 70px;
+    } 
+
+    .aboutcon6{
+        
+        padding-left: 70px;
+    } 
+
+}
+
+
+
+
+
+.aboutcon4{
+    height: 10vh;
+    width: 100%;
+    display:block;
+    position: relative;
+    float: left;
+    left:0;
+    margin-left: 180px;
+    margin-top: 50px;
+    
+} 
+
+.aboutcon5{
+    height: 10vh;
+    width: 100%;
+    display:block;
+    position: relative;
+    float: left;
+    left:0;
+    margin-left: 180px;
+    margin-top: 50px;
+    
+} 
+
+.aboutcon6{
+    height: 10vh;
+    width: 100%;
+    display:block;
+    position: relative;
+    float: left;
+    left:0;
+    margin-left: 180px;
+    margin-top: 50px;
+    
+} 
+
+.aboutcon7{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .main{
+        padding-top: 60px;
+    }
+    .aboutcon4{
+        height: 10vh;
+        width: 80%;
+        display:block;
+        position: relative;
+        float: left;
+        left:0;
+        margin-left: 10px;
+        margin-top: 50px;
+        
+    } 
+
+    .aboutcon5{
+        height: 10vh;
+        width: 80%;
+        display:block;
+        position: relative;
+        float: left;
+        left:0;
+        margin-left: 0px;
+        margin-top: 10px;
+        
+    } 
+
+    .aboutcon6{
+        height: 10vh;
+        width: 80%;
+        display:block;
+        position: relative;
+        float: left;
+        left:0;
+        margin-left: 0px;
+        margin-top: 10px;
+        
+    } 
+
+    .aboutcon7{
+        height: 93vh;
+        width: 100%;
+        display:block;
+        position: relative;
+        background-color: #f79341;
+        z-index: 3;
+    }
+}
+
+
+
+
+.new-message {
+
+    display: none;
+
+}
+
+.about1{
+    float: right;
+    color:#027bb3;
+}
+
+.stepper{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#label {
+    color: white;
+    font-weight: 500;
+}
+
+.html{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+}
+
+
+
+.css{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 60px;
+}
+
+.js{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 60px;
+}
+
+.vs{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 60px;
+}
+
+.sql{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 10px;
+}
+
+.node{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 50px;
+}
+
+.react{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 60px;
+}
+
+.git{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 60px;
+}
+
+.firebase{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 10px;
+}
+
+.mongo{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 50px;
+}
+
+.heroku{
+    width:90px;
+    height:90px;
+    display:inline;
+    clear: both;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .html{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+    }
+
+    .css{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 15px;
+    }
+
+    .js{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 15px;
+    }
+
+    .vs{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .sql{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 15px;
+    }
+
+    .node{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 9px;
+    }
+    
+    .react{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 12px;
+    }
+
+    .git{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 11px;
+    }
+
+    .firebase{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 10px;
+    }
+    
+    .mongo{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 12px;
+    }
+    
+    .heroku{
+        width:40px;
+        height:40px;
+        display:inline;
+        clear: both;
+        margin-left: 12px;
+    }
+
+    .res{
+        width:350px;
+        height: 460px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.skills{
+
+    color: white;
+    text-align: center;
+}
+
+.resume{
+
+    color: black;
+    text-align: center;
+}
