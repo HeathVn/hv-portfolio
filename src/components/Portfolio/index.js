@@ -42,7 +42,7 @@ const Portfolio = () => {
           <div className='projectsContainer'>
            
            <motion.div 
-              initial={{ opacity: 0, x:300 }}
+              initial={{ opacity: 0, x:150 }}
               whileInView={{ opacity: 1, x:0 }}
               transition={{ delay: 0.5, type: "spring",bounce: 0.7, duration: 2 }}
            
@@ -107,7 +107,7 @@ const Portfolio = () => {
 
              <motion.div 
              
-             initial={{ opacity: 0, x:300 }}
+             initial={{ opacity: 0, x:150 }}
              whileInView={{ opacity: 1, x:0 }}
              transition={{ delay: 1, type: "spring",bounce: 0.7, duration: 2 }}
              
