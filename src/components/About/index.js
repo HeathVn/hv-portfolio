@@ -31,12 +31,21 @@ import GIT from '../About/images/github.png'
 import FRBSE from '../About/images/firebase.png'
 import MONGO from '../About/images/mongodb.png'
 import HEROKU from '../About/images/heroku.png'
+import Hacker from '../About/images/hacker.mp4'
 
 import {FaUserGraduate} from 'react-icons/fa'
 import {ImSearch} from 'react-icons/im'
 
 import Lightbox from 'react-lightbox-component';
 import Res from '../About/images/resume.png';
+import  TypeAnimation  from 'react-type-animation';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Box from '@mui/material/Box';
+import { shadows } from '@mui/system';
+
+
+
 
 const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
@@ -150,16 +159,19 @@ const About = () => {
 
 
     return (
-  
-     <div className="main">   
-       <br ></br>
+     
+     <div className="main" id="main">   
+       
        <div className="aboutcon" id="about">
-         <div style={{backgroundColor:'white', width:50, height:50, transform:'rotate(30deg)', marginTop:-18}}></div>
+         <div style={{backgroundColor:'white', width:50, height:50, transform:'rotate(30deg)'}}></div>
 
         <div className="aboutcon3" >
-        <br></br>
+       
+        {/* <br></br> 
         <h1 className="skills">Progress</h1>
-        <br></br>
+        <br></br>*/}
+
+         <div className="stepperCon">
           <Stepper className="stepper" alternativeLabel activeStep={2} connector={<ColorlibConnector />}>
              {steps.map((label) => (
                <Step key={label}>
@@ -167,10 +179,13 @@ const About = () => {
                </Step>
              ))}
             </Stepper>
+          </div>
 
-           <br></br>
-           <h1 className="skills">Experience</h1>
+          {/* <br></br>
+           <h1 className="skills">Experience</h1> */}
 
+           <div className='badgeContainer'>
+            <div className="innerBorder">
             <div className="aboutcon4">
               <img src={HTML} className="html"/>
               <img src={CSS} className="css"/>
@@ -187,22 +202,21 @@ const About = () => {
            <div className="aboutcon6">
               <img src={FRBSE} className="firebase"/>
               <img src={MONGO} className="mongo"/>
-              <img src={HEROKU} className="heroku"/>
-             
+              <img src={HEROKU} className="heroku"/>  
            </div>
-           
+           </div>
+           </div>
         </div>
        
 
         
-
-         <motion.div initial={{x:0}} animate={{ x: 895, transition:{duration:3} }} className="aboutcon2">
+        {/*
+         <motion.div  className="aboutcon2">
          <br></br>
          <h1 className="resume">Resume</h1>
-         <iframe src="https://drive.google.com/file/d/1JRbA7oFeQOBYg2NPfCaFkM2iByfTv0xl/preview" width="680" height="800" allow="autoplay" style={{borderRadius:15, marginTop:50, marginLeft:100}}></iframe>
-            
+         
         </motion.div>
-
+        */}
          {/* <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="photobox" styles={{float:'left'}}>
                 <h1 className="about1">About Us</h1>
                 <motion.img location ={location} key={location.pathname} 
@@ -220,10 +234,47 @@ const About = () => {
        <div className="aboutcon7">
 
        <br></br>
-         <h1 className="resume">Resume</h1>
-         <iframe className="res" src="https://drive.google.com/file/d/1JRbA7oFeQOBYg2NPfCaFkM2iByfTv0xl/preview" width="400" height="550" allow="autoplay" style={{borderRadius:15, marginTop:10, marginLeft:5
-         }}></iframe>
-            
+       
+
+
+
+        <Card sx={{ 
+                       marginRight:20,
+                       position:"relative",
+                       paddingLeft:4,
+                       paddingRight:4,
+                       boxShadow:3,
+                       display:'flex',
+                       '@media screen and (max-width: 800px)': {
+                        
+                        marginLeft:0, 
+                        marginRight:0,
+                         
+                       },
+                      }}
+                id="root2"
+        >
+          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+               <CardContent >
+               <TypeAnimation
+                  sequence={['Hello! Welcome to my web portfolio',4000]}
+                  wrapper="h3"
+                  cursor={true}
+                  repeat={Infinity}
+                  style={{ fontSize: '20em' }}
+                />
+
+                <video  width={400} height={300} loop autoPlay muted>
+                   <source src={Hacker} type="video/mp4" />
+                </video>
+                <button className="learnMore">Learn More</button>
+
+               </CardContent>
+
+          </Box>
+        </Card>
+
+
        </div>
   </div>
 

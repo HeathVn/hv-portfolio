@@ -1,13 +1,17 @@
 import React from 'react'
-
+import logo from '../Footer/images/vonstyles.png'
 import './Footer.css'
 
 const Footer= () => {
     return (
         <>
            <div className="footer">
+                
+               
                <div className="created">
-                   <h5 >Copyright @ 2021 HvLegacyDesigns by HVStyles</h5>
+                <h1 className='hv'>HEATH</h1>
+                <h4>Copyright © 2023 VonStyles Designs | All Rights Reserved </h4>
+                <img src={logo} width="160" height="190"/>
                </div>
               
            </div> 

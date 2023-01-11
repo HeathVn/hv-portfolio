@@ -18,7 +18,9 @@
   }
 
   .scl{
-      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      width:80%;
   }
 }
 
@@ -48,6 +50,6 @@
     border-radius: 30px;
 }
 
-.scl{
-    background-color: black;
+#contacts{
+  width: 95%;
 }

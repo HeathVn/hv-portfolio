@@ -7,17 +7,25 @@
     align-items:center;
 }
 
-.dev{
+.devCon{
     position: absolute;
     z-index: 4;
     float: right;
     margin-right: 240px;
     margin-top: 125px;
-    width: 80px;
-    height:80px;
+    width: fit-content;
+    height: fit-content;
     color: black;
     right:0;
+    border-radius: 15px;
 }
+
+.dev{
+    width: 80px;
+    height:80px;
+}
+
+
 .code{
     
     float: left;
@@ -31,6 +39,7 @@
 
 .wave{
     z-index: 1;
+    margin-top: 100px;
 }
 
 #water{
@@ -63,6 +72,7 @@
 
     .wave{
         display: none;
+
     }
 
     .island{
@@ -108,6 +118,7 @@ canvas{
     no-repeat;
     background-color: white;
     width:100%;
+    height: fit-content;
     flex-direction: column;
     
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);

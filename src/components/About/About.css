@@ -19,36 +19,33 @@
 .photobox{
    height: 10vh;
    width: 40vh;
-   
-    float:left;
-
-    
+   float:left;
 }
 
 .aboutcon{
-    height: 93vh;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
     display:flex;
     position: relative;
-    background-color: black;
+    padding-bottom: 400px;
+    width: 100%;
+    /* background-color: black; */
 }
 
 .aboutcon2{
     height: 93vh;
-    width: 50%;
+    
     display:block;
     position: absolute;
     float: left;
-    left:0;
+   
     background-color: #f79341;
     z-index: 3;
-
-
 }
 
 .aboutcon3{
     height: 50vh;
-    width: 50%;
+    width: 70%;
     
     position: relative;
     float: left;
@@ -103,7 +100,7 @@
     position: relative;
     float: left;
     left:0;
-    margin-left: 180px;
+    margin-left: 10px;
     margin-top: 50px;
     
 } 
@@ -115,7 +112,7 @@
     position: relative;
     float: left;
     left:0;
-    margin-left: 180px;
+    margin-left: 10px;
     margin-top: 50px;
     
 } 
@@ -127,17 +124,24 @@
     position: relative;
     float: left;
     left:0;
-    margin-left: 180px;
+    margin-left: 10px;
     margin-top: 50px;
     
 } 
 
 .aboutcon7{
-    display: none;
+    width:50%;
+    float:left;
 }
+
+.main{
+    display:flex;
+}
+
 @media screen and (max-width: 1000px) {
     .main{
         padding-top: 60px;
+        display:flex;
     }
     .aboutcon4{
         height: 10vh;
@@ -409,7 +413,7 @@
 
 .skills{
 
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -417,4 +421,58 @@
 
     color: black;
     text-align: center;
+}
+
+.stepperCon{
+    background-color: black;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.badgeContainer{
+    background-color: black;
+    padding: 2px;
+    border-radius: 20px;
+    height:100%;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.main{
+    padding-top: 100px;
+}
+
+.innerBorder{
+    border: 4px white solid;
+    
+    border-radius: 15px;
+    z-index: 5;
+    height:98%;
+    width:98%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+#root2{
+
+    border: 7px #f79341 solid;
+    border-radius: 15px;
+}
+
+#root2:hover {
+    box-shadow: 6px 6px 45px 5px black;
+}
+
+#root:hover {
+  box-shadow: 6px 6px 45px 5px black;
+}
+
+.learnMore{
+    background-color:#fecfa8 ;
+    padding: 6px;
+   
+    border: 4px #f79341 solid;
+    border-radius: 15px;
 }

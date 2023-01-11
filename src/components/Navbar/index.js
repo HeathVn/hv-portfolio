@@ -131,7 +131,7 @@ const iconVariants = {
                     </MobileIcon2>
                     <NavMenu className="item1">
                         <NavItem >
-                            <NavLinks className="items"  to="about" smooth={true} duration={1000}>About</NavLinks>
+                            <NavLinks className="items"  to="main" smooth={true} duration={1000}>About</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks className="items" to='portfolio' smooth={true} duration={1000}>Portfolio</NavLinks>

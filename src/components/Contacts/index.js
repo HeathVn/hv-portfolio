@@ -18,7 +18,7 @@ const Contacts = () => {
               <Grid  container justify="center" >
                
                 
-                    <Grid item justify="center" xs={12} sm={6} md={4} lg={3} >
+                    <Grid item  xs={12} sm={6} md={4} lg={3} >
                      
                       <Card className="socials" style={{backgroundColor: "black", borderRadius: 25}}>
                        <div style={{border:'2px solid white', margin: 5, borderRadius: 25, backgroundColor: "black"}}>

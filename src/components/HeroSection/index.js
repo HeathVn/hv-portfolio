@@ -44,8 +44,12 @@ const HeroSection = () => {
               <h2 className="name">SOFTWARE ENGINEER PORTFOLIO</h2>
               
               <video className="vid" src = {Video2}  autoPlay  muted />
-              <SiDevdotto className="dev"/>
-              <FaCode className="code"/>
+              
+              <div className="devCon">
+                 <SiDevdotto className="dev"/>
+              </div>
+              
+              {/* <FaCode className="code"/> */}
   
   
  <img src={Island} className="island" />
