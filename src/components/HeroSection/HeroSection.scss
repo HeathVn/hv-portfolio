@@ -61,9 +61,14 @@
 
 @media screen and (max-width: 800px) {
 
+    .hero-container {
+      display:none;
+      box-shadow: none;
+    }
     .vid{
         height:230px;
         padding-top: 25px;
+        display:none;
     }
 
     #water{
@@ -80,8 +85,7 @@
     }
 
     .dev{
-        margin-right: 290px;
-        margin-top: 90px;
+        display: none;
     }
 
     .code{
@@ -121,7 +125,7 @@ canvas{
     height: fit-content;
     flex-direction: column;
     
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    
     object-fit: contain;
     
 }
