@@ -83,6 +83,7 @@ const iconVariants = {
         <>
             <Nav className="navbar">
                 <NavbarContainer>
+                    <div>
                     <NavLogo 
                     
                     className="logo" to='/'><motion.h3
@@ -99,7 +100,7 @@ const iconVariants = {
                     
                     
                     </NavLogo>
-                    
+                    </div>
                     <MobileIcon
                     
                       intial={false}
@@ -129,6 +130,8 @@ const iconVariants = {
                         </StyledBadge>
                         
                     </MobileIcon2>
+
+                    <div className="navmenu">
                     <NavMenu className="item1">
                         <NavItem >
                             <NavLinks className="items"  to="main" smooth={true} duration={1000}>About</NavLinks>
@@ -140,6 +143,7 @@ const iconVariants = {
                             <NavLinks className="items" to='contacts' smooth={true} duration={1000}>Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
+                    </div>
                 </NavbarContainer>
 
 

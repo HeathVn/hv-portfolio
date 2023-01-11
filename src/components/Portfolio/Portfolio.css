@@ -81,7 +81,7 @@
 @media screen and (max-width: 1000px) {
 
 #card{
-
+    
 }
 
 .projectsContainer{
@@ -90,10 +90,11 @@
 }
 }
 
-#root{
+#root1{
     border-top-right-radius: 15px;
     border-bottom-right-radius:15px ;
-   
+    margin-right:20px;
+    position: relative;
 }
 
 .info{

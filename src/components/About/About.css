@@ -57,11 +57,14 @@
     .main{
         padding-top: 60px;
         display: block;
-        padding-bottom: 330px;
+        padding-bottom: 400px;
     }
     
     .aboutcon{
         padding-bottom: 130px;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .aboutcon2{
 
@@ -94,6 +97,11 @@
         
         padding-left: 70px;
     } 
+
+    .aboutcon7{
+        margin-top: 15px;
+        position: relative;
+    }
 
 }
 
@@ -150,7 +158,13 @@
     .main{
         padding-top: 60px;
         display: block;
-        padding-bottom: 330px;
+        padding-bottom: 360px;
+    }
+
+    .aboutcon{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .aboutcon4{
         height: 10vh;
@@ -193,7 +207,7 @@
         width: 100%;
         display:block;
         position: relative;
-        margin-top: 20px;
+        margin-top: 40px;
         z-index: 3;
     }
 
@@ -478,7 +492,7 @@
     box-shadow: 6px 6px 45px 5px black;
 }
 
-#root:hover {
+#root1:hover {
   box-shadow: 6px 6px 45px 5px black;
 }
 

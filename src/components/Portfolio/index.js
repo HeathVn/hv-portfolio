@@ -60,7 +60,7 @@ const Portfolio = () => {
                          
                        },
                       }}
-                id="root"
+                id="root1"
              >
              <CardActionArea style={{display:'inline',border:'8px solid white'}}>
               <CardMedia
@@ -125,7 +125,7 @@ const Portfolio = () => {
                          
                        },
                       }}
-                id="root"
+                id="root1"
              >
              <CardActionArea style={{display:'inline',border:'8px solid white'}}>
               <CardMedia

@@ -30,13 +30,12 @@ background-image: linear-gradient(45deg,#f5672f 25%, #ff7d14 25%,#f94327 25%,#ff
 `;
 
 export const NavbarContainer = styled.div`
-    display:block;
+    display:flex;
     justify-content: space-between;  
     height: 80px;
     z-index: 1;
-    width: 100%
+    width: 100%;
     padding: 0 24px;
-    max-width:1100px;
     margin-left: 0px;
    
 
@@ -52,9 +51,9 @@ export const NavLogo = styled(Link)`
     margin-left: 0px;
     font-weight: bold;
     text-decoration: none;
-    padding-left: 20px;
+    margin-left: 2px;
     padding-top: 15px;
-    position: absolute;
+    position: relative;
 
 
     @media screen and (max-width: 768px){
@@ -77,7 +76,7 @@ margin-top: 16px;
 transform: translate(-120%, 45%);
 display: none;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 870px){
         display: block;
         position: absolute;
         top:0;
@@ -101,7 +100,7 @@ transform: translate(-180%, 23%);
 
 
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 870px){
         display:block;
         position: absolute;
         top:0;
@@ -117,14 +116,15 @@ transform: translate(-180%, 23%);
 
 export const NavMenu = styled.ul`
     display: flex;
-    align-items: center;
+    position: relative;
     list-style: none;
     text-align: center;
-    margin-right: 637px;
-    position: absolute;
-    right: 40px;
+    margin-right: auto;
+    margin-left:auto;
+    width:fit-content;
+    right: 50px;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 870px){
         display:none;
     }
 
