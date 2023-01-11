@@ -24,11 +24,11 @@
 
 .aboutcon{
     height: fit-content;
-    width: fit-content;
+    width: 90%;
     display:flex;
     position: relative;
     padding-bottom: 400px;
-    width: 100%;
+    
     /* background-color: black; */
 }
 
@@ -49,9 +49,10 @@
     
     position: relative;
     float: left;
-    left:0;
-    align-content: center;
     
+    
+    margin-left: auto;
+    margin-right: auto;
 }  
 @media screen and (max-width: 800px) {
     .main{
@@ -74,11 +75,13 @@
 
     .aboutcon3{
         height: 50vh;
-        width: 100%;
+        width: 90%;
         
         position: relative;
         float: left;
         left:0;
+        margin-left: auto;
+        margin-right: auto;
         
         
     }  
@@ -158,7 +161,7 @@
     .main{
         padding-top: 10px;
         display: block;
-        padding-bottom: 390px;
+        padding-bottom: 410px;
     }
 
     .aboutcon{

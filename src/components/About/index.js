@@ -163,7 +163,7 @@ const About = () => {
      <div className="main" id="main">   
        
        <div className="aboutcon" id="about">
-         <div style={{backgroundColor:'white', width:50, height:50, transform:'rotate(30deg)'}}></div>
+         
 
         <div className="aboutcon3" >
        
