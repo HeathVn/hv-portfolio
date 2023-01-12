@@ -41,7 +41,7 @@ const HeroSection = () => {
             fill={defaults.fill}
   /> 
            
-              <h2 className="name">SOFTWARE ENGINEER PORTFOLIO</h2>
+              <h1 className="name">HEATH'S WEBSITE PORTFOLIO</h1>
               
               <video className="vid" src = {Video2}  autoPlay  muted />
               

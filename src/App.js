@@ -9,6 +9,7 @@ import About from '../src/components/About'
 import Portfolio from '../src/components/Portfolio'
 import Contacts from '../src/components/Contacts'
 import Footer from './components/Footer';
+import Banner from './components/Banner';
 
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
       <HeroSection/>
       
       
-       <About />
-      <br></br>
+      <About />
+      <Banner/>
       <Portfolio/>
       <Contacts/>
       <Footer/> 

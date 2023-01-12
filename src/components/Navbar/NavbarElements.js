@@ -42,7 +42,7 @@ export const NavbarContainer = styled.div`
 
 `;
 export const NavLogo = styled(Link)`
-    color: black;
+    color: white;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -118,11 +118,11 @@ export const NavMenu = styled.ul`
     display: flex;
     position: relative;
     list-style: none;
-    text-align: center;
+    
     margin-right: auto;
     margin-left:auto;
     width:fit-content;
-    right: 50px;
+    right: 100px;
 
     @media screen and (max-width: 870px){
         display:none;
@@ -135,11 +135,11 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-    color: black;
+    color: white;
     font-weight: bold;
     display: flex;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 40px;
     text-decoration: none;
     margin-top: 27px;
     cursor: pointer;

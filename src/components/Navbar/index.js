@@ -93,7 +93,7 @@ const iconVariants = {
                     
                     
                     
-                    >Heath's Web Portfolio <TiDeviceDesktop id="flame"/></motion.h3>
+                    >HEATH </motion.h3>
 
                     
                         
@@ -131,7 +131,7 @@ const iconVariants = {
                         
                     </MobileIcon2>
 
-                    <div className="navmenu">
+                    <div id="navmenu">
                     <NavMenu className="item1">
                         <NavItem >
                             <NavLinks className="items"  to="main" smooth={true} duration={1000}>About</NavLinks>
