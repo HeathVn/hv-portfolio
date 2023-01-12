@@ -6,7 +6,8 @@
     position: relative;
     bottom: 0;
     z-index: 5;
-   
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     text-align: center;
 }
 
@@ -21,4 +22,5 @@
 
 .hv{
     color: white;
+    font-family: "Copperplate", fantasy;
 }
