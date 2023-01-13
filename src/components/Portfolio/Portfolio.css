@@ -110,13 +110,13 @@
 .firstRow{
     width:100%;
     height: fit-content;
-    display: block;
+    display: flex;
 }
 
 .secondRow{
     width:100%;
     height: fit-content;
-    display: block;
+    display:flex;
     margin-top: 15px;
 }
 

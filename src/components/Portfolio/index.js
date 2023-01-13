@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 
 import './Portfolio.css';
 import Card from '@mui/material/Card';
@@ -23,7 +23,31 @@ import Display from '../Portfolio/images/display.png'
 
 
 
-const Portfolio = () => {
+class Portfolio extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      clickedCryptoConnect:false,
+      clickedWebDev:false
+    }
+  }
+
+ 
+
+    clickedCrypto(){
+      this.setState({clickedCryptoConnect:!this.state.clickedCryptoConnect})
+      
+      
+    }
+
+    clickedWebDev(){
+      this.setState({clickedWebDev:!this.state.clickedWebDev})
+      
+      
+    }
+
+    render(){
     return (
         <div id="portfolio">
           <div className="con" >
@@ -92,7 +116,7 @@ const Portfolio = () => {
                </CardContent>
              <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
                <IconButton>
-                 <BsFillInfoCircleFill />
+                 <BsFillInfoCircleFill onClick={()=> this.clickedCrypto()} />
                </IconButton>
                <a href="https://github.com/HeathVn/CryptoConnect-Nodejs-Application">
                <IconButton >
@@ -102,6 +126,47 @@ const Portfolio = () => {
              </Box>
              </Box>
              </Card>
+
+             {this.state.clickedCryptoConnect ?
+              <Card sx={{ 
+                width: 470,  
+                left:10, 
+                top:70,
+                position:"relative",
+                display:'flex',
+                '@media screen and (max-width: 800px)': {
+                 
+                 marginLeft:0, 
+                 marginRight:0,
+                  
+                },
+               }}>
+                <CardContent sx={{ flex: '1 0 auto' }}>
+                 <Typography component="div" variant="h5">
+                     CryptoConnect
+                 </Typography>
+                 <Typography variant="subtitle1" color="text.secondary" component="div">
+                     Network Application Development Course Project
+                 </Typography>
+                 <Typography variant="body2" color="text.secondary" component="div">
+                     Tools: NodeJS, Express, MongoDB, Visual Studio
+                 </Typography>
+                 <br/>
+                 <Typography variant="h6" color="text.secondary" component="div">
+                     Details
+                 </Typography>
+                 <Typography variant="body2" color="text.secondary" component="div" sx={{width:'22%', position:'relative'}}>
+                     CryptoConnect is an application developed to allow users to authenticate and access or create events, which other users can then RSVP for. 
+                     The application development process consisted of outlining schema types for MongoDB, creating a server, organizing routes and middleware.
+                 </Typography>
+                 
+               </CardContent>
+              </Card>
+              :
+              <></>
+             
+            
+            }
 
              </motion.div>
 
@@ -158,7 +223,7 @@ const Portfolio = () => {
                </CardContent>
              <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
                <IconButton>
-                 <BsFillInfoCircleFill />
+                 <BsFillInfoCircleFill onClick={()=> this.clickedWebDev()}/>
                </IconButton>
                <a href="https://webdev-business-q4gl4.ondigitalocean.app/">
                  <IconButton >
@@ -169,6 +234,49 @@ const Portfolio = () => {
              </Box>
              </Card>
 
+             {this.state.clickedWebDev ?
+              <Card sx={{ 
+                width: 400,  
+                left:10, 
+                top:70,
+                position:"relative",
+                display:'flex',
+                '@media screen and (max-width: 800px)': {
+                 
+                 marginLeft:0, 
+                 marginRight:0,
+                  
+                },
+               }}>
+                <CardContent sx={{ flex: '1 0 auto' }}>
+                 <Typography component="div" variant="h5">
+                     VonStyles Design
+                 </Typography>
+                 <Typography variant="subtitle1" color="text.secondary" component="div">
+                     Personal Project
+                 </Typography>
+                 <Typography variant="body2" color="text.secondary" component="div" sx={{width:'19%', position:'relative'}}>
+                     Tools: ReactJS, Tailwind, MaterialUI, Visual Studio, React Scroll, Framer Motion
+                 </Typography>
+                 <br/>
+                 <Typography variant="h6" color="text.secondary" component="div">
+                     Details
+                 </Typography>
+                 <Typography variant="body2" color="text.secondary" component="div" sx={{width:'19%', position:'relative'}}>
+                     CryptoConnect is an application developed to allow users to authenticate and access or create events, which other users can then RSVP for. 
+                     The application development process consisted of outlining schema types for MongoDB, creating a server, organizing routes and middleware.
+                 </Typography>
+                 
+               </CardContent>
+              </Card>
+              :
+              <></>
+             
+            
+            }
+
+
+ 
              </motion.div>
           </div>
 
@@ -354,7 +462,7 @@ const Portfolio = () => {
          
           </div>
         </div>
-    )
+    )}
 }
 
 export default Portfolio

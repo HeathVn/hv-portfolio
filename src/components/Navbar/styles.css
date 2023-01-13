@@ -46,8 +46,7 @@
 
 .items:active{
   box-shadow: 6px 10px  black;
-  bottom:3px;
-  position: relative;
+  bottom:6px;
 }
 
 
