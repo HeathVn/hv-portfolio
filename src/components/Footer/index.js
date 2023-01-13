@@ -10,7 +10,7 @@ const Footer= () => {
                
                <div className="created">
                 <h1 className='hv'>HEATH</h1>
-                <h4>Copyright © 2023 VonStyles Designs | All Rights Reserved </h4>
+                <h4 className='copyright'>Copyright © 2023 VonStyles Designs | All Rights Reserved </h4>
                 <img src={logo} width="160" height="190"/>
                </div>
               

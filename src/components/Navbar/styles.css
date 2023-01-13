@@ -44,6 +44,11 @@
   position: relative;
 }
 
+.items:active{
+  box-shadow: 6px 10px  black;
+  bottom:3px;
+  position: relative;
+}
 
 
 .items:focus{
@@ -58,7 +63,7 @@
   top: 0;
   margin-top: 70px;
   z-index: 5;
-  background-color: rgb(238, 156, 50);
+  background-color: #f5672f;
   color: white;
   border-radius: 15px;
   align-items: center;

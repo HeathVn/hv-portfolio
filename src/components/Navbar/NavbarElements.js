@@ -132,6 +132,12 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+
+    &.active {
+        box-shadow: 6px 10px  black;
+        bottom:3px;
+        position: relative;
+    }
 `
 
 export const NavLinks = styled(Link)`
@@ -148,7 +154,9 @@ export const NavLinks = styled(Link)`
  currently on when scrolling */
 
     &.active {
-        border-bottom: 3px solid #fff;
+        box-shadow: 6px 10px  black;
+        bottom:3px;
+        position: relative;
     }
 
 `
