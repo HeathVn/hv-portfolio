@@ -37,6 +37,13 @@
   font-family: "Copperplate", fantasy;
 }
 
+.items:hover{
+
+  box-shadow: 6px 10px  black;
+  bottom:3px;
+  position: relative;
+}
+
 
 
 .items:focus{

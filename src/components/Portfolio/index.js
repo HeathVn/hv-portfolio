@@ -94,10 +94,11 @@ const Portfolio = () => {
                <IconButton>
                  <BsFillInfoCircleFill />
                </IconButton>
+               <a href="https://github.com/HeathVn/CryptoConnect-Nodejs-Application">
                <IconButton >
                   <FaEye className="eye" />
                </IconButton>
-              
+              </a>
              </Box>
              </Box>
              </Card>
