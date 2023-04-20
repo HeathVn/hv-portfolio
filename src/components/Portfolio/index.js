@@ -250,7 +250,7 @@ class Portfolio extends React.Component {
                }}>
                 <CardContent sx={{ flex: '1 0 auto' }}>
                  <Typography component="div" variant="h5">
-                     VonStyles Design
+                     Coconut Studios
                  </Typography>
                  <Typography variant="subtitle1" color="text.secondary" component="div">
                      Personal Project
@@ -263,8 +263,7 @@ class Portfolio extends React.Component {
                      Details
                  </Typography>
                  <Typography variant="body2" color="text.secondary" component="div" sx={{width:'19%', position:'relative'}}>
-                     CryptoConnect is an application developed to allow users to authenticate and access or create events, which other users can then RSVP for. 
-                     The application development process consisted of outlining schema types for MongoDB, creating a server, organizing routes and middleware.
+                    Website development, logo and form design business
                  </Typography>
                  
                </CardContent>
